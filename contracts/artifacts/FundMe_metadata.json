@@ -4,7 +4,33 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -13,6 +39,7 @@
 		"userdoc": {
 			"kind": "user",
 			"methods": {},
+			"notice": "Requirements High level: A contract through which users can send money to it and I can withdraw Steps to build: A minimum donation amount needs to be set A function to send the funds to the contract A function that can call an external oracle to convert between ETH/USD A function that can withdraw the amount only by contract owner",
 			"version": 1
 		}
 	},
@@ -33,11 +60,11 @@
 	},
 	"sources": {
 		"contracts/FundMe.sol": {
-			"keccak256": "0xff7f3b2938c114259d933f14aafe9e1efefaa35b1601ec70e6201c463c395a00",
+			"keccak256": "0xc406b1d1e1520607af66245af53eaef9c632a2985b1d59692ba7fd524dd50d89",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://af2732248ffb921065f18286e99bdece441b9f250ebf19ae37024e8c73b27453",
-				"dweb:/ipfs/QmcXAiAFsNypys7hVpLBJZAQWyM2FpVvQN2Uk6hj8znC7X"
+				"bzz-raw://d848d6ee8a29cc05507539879bc93482de9552a1e8fe46b04851c25ee9303d39",
+				"dweb:/ipfs/QmVFWjYLyAgfuXv52AgZAE4b8KsBt6NTUNmdBb3cYGM9rZ"
 			]
 		}
 	},
