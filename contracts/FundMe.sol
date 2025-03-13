@@ -16,8 +16,6 @@ contract FundMe {
 
     address immutable owner;
 
-    string public privateKey = _HIDDEN;
-
     constructor() {
         owner = msg.sender;
     }
